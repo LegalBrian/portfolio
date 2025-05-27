@@ -1,14 +1,14 @@
 import ButtonsHome from "@/components/ButtonsHome";
 import ImageHome from "@/components/ImageHome";
+import NavBar from "@/components/NavBar";
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
   return (
     <main className="flex flex-col gap-5 row-start-2 items-center justify-between sm:items-start h-dvh">
-      <div className="text-white text-xs gap-3 flex items-center justify-center w-full py-4">
-        <button className="px-2 py-1 rounded-lg hover:bg-white hover:text-black transition duration-400 cursor-pointer">Inicio</button>
-        <button className="px-2 py-1 rounded-lg hover:bg-white hover:text-black transition duration-400 cursor-pointer">Experiencia</button>
-        <button className="px-2 py-1 rounded-lg hover:bg-white hover:text-black transition duration-400 cursor-pointer">Proyectos</button>
-      </div>
+      <NavBar />
       <div className="h-full w-full flex flex-col sm:flex-row-reverse items-center justify-center gap-5">
         <ImageHome />
         <div className="text-white w-[280px] sm:w-[450px] flex flex-col items-center sm:items-start text-center sm:text-start gap-5">
@@ -18,7 +18,12 @@ export default function Home() {
           <ButtonsHome />
         </div>
       </div>
+      <div className="h-full w-full flex flex-col sm:flex-row-reverse items-center justify-center gap-5">
+        Experiencia
+      </div>
+      <div className="h-full w-full flex flex-col sm:flex-row-reverse items-center justify-center gap-5">
+        Experiencia
+      </div>
     </main>
-
   );
 }

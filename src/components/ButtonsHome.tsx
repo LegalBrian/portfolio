@@ -1,9 +1,13 @@
+"use client"
 import Image from "next/image";
+import Link from 'next/link'
 
 export default function ButtonsHome() {
+
+
     return (
         <div className="flex flex-row gap-6">
-            <a href="https://www.linkedin.com/in/legal-brian" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
+            <Link href="https://www.linkedin.com/in/legal-brian" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
                 <Image
                     className="group-hover:invert"
                     src="/linkedin.svg"
@@ -12,8 +16,8 @@ export default function ButtonsHome() {
                     height={16}
                 />
                 <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Linkedin</p>
-            </a>
-            <a href="mailto:legalbriandev@gmail.com" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
+            </Link>
+            <Link href="mailto:legalbriandev@gmail.com" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
                 <Image
                     className="group-hover:invert"
                     src="/mail.svg"
@@ -22,8 +26,8 @@ export default function ButtonsHome() {
                     height={16}
                 />
                 <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Email</p>
-            </a>
-            <a href="https://github.com/LegalBrian" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
+            </Link>
+            <Link href="https://github.com/LegalBrian" target="_blank" className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
                 <Image
                     className="group-hover:invert"
                     src="/github.svg"
@@ -32,8 +36,8 @@ export default function ButtonsHome() {
                     height={16}
                 />
                 <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Github</p>
-            </a>
-            <a href="/curriculum.pdf" download className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
+            </Link>
+            <Link href="/curriculum.pdf" download={true} className="group border text-white border-white hover:bg-white flex flex-row gap-2 hover:text-black duration-300 cursor-pointer button">
                 <Image
                     className="group-hover:invert"
                     src="/download.svg"
@@ -42,7 +46,7 @@ export default function ButtonsHome() {
                     height={16}
                 />
                 <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Descargar CV</p>
-            </a>
+            </Link>
         </div>
     )
 }
