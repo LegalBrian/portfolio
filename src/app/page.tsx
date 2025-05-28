@@ -1,11 +1,8 @@
 import ButtonsHome from "@/components/ButtonsHome";
 import ImageHome from "@/components/ImageHome";
 import NavBar from "@/components/NavBar";
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 export default function Home() {
-  const router = useRouter()
   return (
     <main className="flex flex-col gap-5 row-start-2 items-center justify-between sm:items-start h-dvh">
       <NavBar />
@@ -17,12 +14,6 @@ export default function Home() {
           <p className="text-xs/normal text-shadow-black text-shadow-2xs opacity-80">Innovador Desarrollador con una sólida experiencia de más de dos años en desarrollo Full Stack implementando interfaces atractivas y funcionales, además de asegurar la escalabilidad y el mantenimiento óptimo de aplicaciones.</p>
           <ButtonsHome />
         </div>
-      </div>
-      <div className="h-full w-full flex flex-col sm:flex-row-reverse items-center justify-center gap-5">
-        Experiencia
-      </div>
-      <div className="h-full w-full flex flex-col sm:flex-row-reverse items-center justify-center gap-5">
-        Experiencia
       </div>
     </main>
   );
