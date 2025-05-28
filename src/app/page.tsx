@@ -11,7 +11,7 @@ export default function Home() {
         <div className="text-white w-[280px] sm:w-[450px] flex flex-col items-center sm:items-start text-center sm:text-start gap-5">
           <h1 className="font-bold text-5xl/normal sm:text-7xl/normal text-shadow-black text-shadow-2xs opacity-80 w-64 sm:w-96 cssanimation typing sequence">Brian Legal</h1>
           <h2 className="font-bold text-2xl/normal text-shadow-black text-shadow-2xs opacity-80">Full Stack Developer</h2>
-          <p className="text-xs/normal text-shadow-black text-shadow-2xs opacity-80">Innovador Desarrollador con una sólida experiencia de más de dos años en desarrollo Full Stack implementando interfaces atractivas y funcionales, además de asegurar la escalabilidad y el mantenimiento óptimo de aplicaciones.</p>
+          <p className="text-base/normal text-shadow-black text-shadow-2xs opacity-80">Innovador Desarrollador con una sólida experiencia de más de dos años en desarrollo Full Stack implementando interfaces atractivas y funcionales, además de asegurar la escalabilidad y el mantenimiento óptimo de aplicaciones.</p>
           <ButtonsHome />
         </div>
       </div>

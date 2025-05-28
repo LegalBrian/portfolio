@@ -45,7 +45,7 @@ export default function ButtonsHome() {
                     width={16}
                     height={16}
                 />
-                <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Descargar CV</p>
+                <p className="hidden group-hover:inline-block transition-opacity duration-500 text-xs">Curriculum</p>
             </Link>
         </div>
     )
