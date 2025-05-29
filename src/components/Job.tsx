@@ -17,7 +17,7 @@ export default function Job({
         <div className="flex flex-row w-full gap-8">
             <div className="flex flex-col items-center">
                 <div className={`w-[1px] h-[6px] ${type === "start" ? "" : "bg-white/40"}`} />
-                <div className="h-3 w-3 rounded-full bg-white" />
+                <div className="h-4 w-4 rounded-full bg-white" />
                 <div className={`w-[1px] h-full ${type === "end" ? "" : "bg-white/40"}`} />
             </div>
             <div className="pb-8 flex-col">
