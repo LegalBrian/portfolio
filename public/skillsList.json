@@ -1,0 +1,55 @@
+[
+    {
+        "title": "Lenguajes & Frameworks",
+        "skills": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "Node.js",
+            "Express",
+            "React.js",
+            "Next.js",
+            "Redux",
+            "React Native"
+        ]
+    },
+    {
+        "title": "Frontend",
+        "skills": [
+            "HTML",
+            "CSS",
+            "Tailwind",
+            "Responsive Desing"
+        ]
+    },
+    {
+        "title": "Bases de datos & Backend",
+        "skills": [
+            "MySQL",
+            "PostgreSQL",
+            "API Rest",
+            "Responsive Desing"
+        ]
+    },
+    {
+        "title": "Herramientas",
+        "skills": [
+            "Git",
+            "Postman",
+            "Figma",
+            "Expo"
+        ]
+    },
+    {
+        "title": "Soft Skills",
+        "skills": [
+            "SCRUM",
+            "Comunicación efectiva",
+            "Resolución de problemas",
+            "Trabajo en equipo",
+            "Adaptabilidad",
+            "Enfoque a resultados",
+            "Buenas prácticas"
+        ]
+    }
+]

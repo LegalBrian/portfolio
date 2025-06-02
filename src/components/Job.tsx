@@ -20,10 +20,10 @@ export default function Job({
                 <div className="h-4 w-4 rounded-full bg-white" />
                 <div className={`w-[1px] h-full ${type === "end" ? "" : "bg-white/40"}`} />
             </div>
-            <div className="pb-8 flex-col">
-                <h3 className="text-white/80 text-base pb-2">{title}</h3>
-                <p className="text-xs text-white/60 pb-2">{date}</p>
-                <p className="text-xs text-white/40 pb-2">{country}</p>
+            <div className="pb-8 flex gap-2 flex-col">
+                <h3 className="text-white/80 text-base">{title}</h3>
+                <p className="text-xs text-white/60">{date}</p>
+                <p className="text-xs text-white/40">{country}</p>
                 <div className="text-white/80 text-sm">
                     {description.split('\n').map((line, i) => (
                         <p key={i}>{line}</p>

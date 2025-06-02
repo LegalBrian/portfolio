@@ -1,55 +1,15 @@
 import Job from "@/components/Job";
+import Labels from "@/components/Labels";
 import NavBar from "@/components/NavBar";
+import SkillsList from "../../../public/skillsList.json"
 
 export default function Experience() {
 
-    const frameworks: string[] = [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "Node.js",
-        "Express",
-        "React.js",
-        "Next.js",
-        "Redux",
-        "React Native"
-    ]
-
-    const frontend: string[] = [
-        "HTML",
-        "CSS",
-        "Tailwind",
-        "Responsive Desing"
-    ]
-
-    const backend: string[] = [
-        "MySQL",
-        "PostgreSQL",
-        "API Rest",
-        "Responsive Desing"
-    ]
-
-    const tools: string[] = [
-        "Git",
-        "Postman",
-        "Figma",
-        "Expo"
-    ]
-
-    const soft: string[] = [
-        "SCRUM",
-        "Comunicación efectiva",
-        "Resolución de problemas",
-        "Trabajo en equipo",
-        "Adaptabilidad",
-        "Enfoque a resultados",
-        "Buenas prácticas"
-    ]
 
     return (
-        <main className="h-dvh flex flex-col gap-5 row-start-2 items-center justify-between sm:items-start">
+        <main className="flex flex-col gap-5 items-center justify-between sm:items-start">
             <NavBar />
-            <div className="w-full flex flex-col items-start justify-center gap-5 pb-10 px-5 sm:px-52 scroll-auto">
+            <div className="w-full flex flex-col items-start justify-center gap-5 pb-10 px-5 sm:px-52">
                 <div className="w-full flex flex-row gap-2 items-center">
                     <h1 className="text-lg font-bold text-white">Trayectoria</h1>
                     <div className="bg-white/40 h-[1px] w-full" />
@@ -68,46 +28,14 @@ export default function Experience() {
                     <div className="bg-white/40 h-[1px] w-full" />
                 </div>
                 <div className="flex flex-col gap-5">
-                    <h2 className="text-base text-white/80">Lenguajes & Frameworks</h2>
-                    <div className="flex flex-wrap gap-5">
-                        {
-                            frameworks.map((i) => (
-                                <p className="px-2 py-1 border border-white/40 text-center rounded-md text-sm text-white/60">{i}</p>
-                            ))
-                        }
-                    </div>
-                    <h2 className="text-base text-white/80">Frontend</h2>
-                    <div className="flex flex-wrap gap-5">
-                        {
-                            frontend.map((i) => (
-                                <p className="px-2 py-1 border border-white/40 text-center rounded-md text-sm text-white/60">{i}</p>
-                            ))
-                        }
-                    </div>
-                    <h2 className="text-base text-white/80">Bases de datos & Backend</h2>
-                    <div className="flex flex-wrap gap-5">
-                        {
-                            backend.map((i) => (
-                                <p className="px-2 py-1 border border-white/40 text-center rounded-md text-sm text-white/60">{i}</p>
-                            ))
-                        }
-                    </div>
-                    <h2 className="text-base text-white/80">Herramientas</h2>
-                    <div className="flex flex-wrap gap-5">
-                        {
-                            tools.map((i) => (
-                                <p className="px-2 py-1 border border-white/40 text-center rounded-md text-sm text-white/60">{i}</p>
-                            ))
-                        }
-                    </div>
-                    <h2 className="text-base text-white/80">Soft Skills</h2>
-                    <div className="flex flex-wrap gap-5">
-                        {
-                            soft.map((i) => (
-                                <p className="px-2 py-1 border border-white/40 text-center rounded-md text-sm text-white/60">{i}</p>
-                            ))
-                        }
-                    </div>
+                    {
+                        SkillsList.map((i, k) => (
+                            <div key={k} className="flex flex-col gap-5">
+                                <h2 className="text-base text-white/80">{i.title}</h2>
+                                <Labels list={i.skills} />
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="w-full flex flex-row gap-2 items-center">
                     <h1 className="text-lg font-bold text-white">Educación</h1>

@@ -1,4 +1,4 @@
-import ButtonsHome from "@/components/ButtonsHome";
+import Button from "@/components/Button";
 import ImageHome from "@/components/ImageHome";
 import NavBar from "@/components/NavBar";
 
@@ -12,7 +12,12 @@ export default function Home() {
           <h1 className="font-bold text-5xl/normal sm:text-7xl/normal text-shadow-black text-shadow-2xs opacity-80 w-64 sm:w-96 cssanimation typing sequence">Brian Legal</h1>
           <h2 className="font-bold text-2xl/normal text-shadow-black text-shadow-2xs opacity-80">Full Stack Developer</h2>
           <p className="text-base/normal text-shadow-black text-shadow-2xs opacity-80">Innovador Desarrollador con una sólida experiencia de más de dos años en desarrollo Full Stack implementando interfaces atractivas y funcionales, además de asegurar la escalabilidad y el mantenimiento óptimo de aplicaciones.</p>
-          <ButtonsHome />
+          <div className="flex flex-row gap-6">
+            <Button url="https://www.linkedin.com/in/legal-brian" text="LinkedIn" />
+            <Button url="mailto:legalbriandev@gmail.com" text="Email" />
+            <Button url="https://github.com/LegalBrian" text="Github" />
+            <Button url="/curriculum.pdf" text="Curriculum" download={true} />
+          </div>
         </div>
       </div>
     </main>
