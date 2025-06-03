@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Portfolio",
+        "description": "Desarrollado con TypeScript, React.js, Next.js y Tailwind CSS. Diseño responsive, rápido y optimizado para destacar proyectos de manera profesional.",
+        "github": "https://github.com/LegalBrian/portfolio",
+        "figma": "https://www.figma.com/design/uxHzAhsQISoEvgkVrQacOC/Portfolio",
+        "url": "",
+        "tech": [
+            "TypeScript",
+            "React.js",
+            "Next.js",
+            "Tailwind",
+            "Responsive Desing"
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "type": "start",
+        "title": "Ingeniería electrónica - Universidad Nacional de Moreno (UNM)",
+        "date": "feb. 2024 - actualmente",
+        "country": "Buenos Aires, Argentina",
+        "description": "Actualmente cursando la carrera de Ingeniería Electrónica, donde desarrollo habilidades en matemáticas, lógica computacional y electrónica digital. Esta formación complementa mi perfil como desarrollador al fortalecer mi capacidad de análisis y resolución de problemas complejos."
+    },
+    {
+        "type": "end",
+        "title": "Full Stack Web Developer - Henry",
+        "date": "oct. 2022 - feb. 2023",
+        "country": "Buenos Aires, Argentina",
+        "description": "Bootcamp intensivo de más de 800 horas prácticas, enfocado en tecnologías como JavaScript, Node.js, React, PostgreSQL, y metodologías ágiles. Participé en un proyecto final colaborativo, simulando un entorno laboral real bajo la metodología SCRUM. Reforcé habilidades de desarrollo full stack, trabajo en equipo y resolución de problemas en entornos reales."
+    }
+]

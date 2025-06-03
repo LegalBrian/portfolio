@@ -28,9 +28,24 @@ export default function Project({
             </div>
             <Labels list={tech} />
             <div className="flex flex-row gap-2">
-                <Button url={figma} text="Figma" />
-                <Button url={github} text="Github" />
-                <Button url={url} text="Deploy" />
+                {
+                    figma ?
+                        <Button url={figma} text="Figma" />
+                        :
+                        null
+                }
+                {
+                    github ?
+                        <Button url={github} text="Github" />
+                        :
+                        null
+                }
+                {
+                    url ?
+                        <Button url={url} text="Deploy" />
+                        :
+                        null
+                }
             </div>
         </div>
     )
